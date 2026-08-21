@@ -1,7 +1,7 @@
 # Fibonacci using Memoization and Tabulation
 
 # Memoization
-def fibonacci_memo(n, memo={}):
+def fibonacci_memo(n, memo):
     if n <= 1:
         return n
 
@@ -31,5 +31,5 @@ def fibonacci_tab(n):
 n = int(input("Enter n: "))
 
 # Output
-print("Fibonacci using Memoization:", fibonacci_memo(n))
-print("Fibonacci using Tabulation:", fibonacci_tab(n))
+print("Using Memoization:", fibonacci_memo(n, {}))
+print("Using Tabulation:", fibonacci_tab(n))
